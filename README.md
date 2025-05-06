@@ -1,13 +1,12 @@
 # Tetris-JAX
 
-This project is a Tetris game implemented using JAX and Equinox, utilizing a Deep Q-Network (DQN) to train an agent to play Tetris. The code includes scripts for training and testing the model, designed for Ubuntu 20.04 with CUDA 12.0 for GPU acceleration.
+This project is a Tetris game implemented using JAX and Equinox, utilizing a Double Deep Q-Network to train an agent to play Tetris. The code includes scripts for training and testing the model, designed for Ubuntu 20.04 with CUDA 12.0 for GPU acceleration.
 
 ## Installation
 
 ### System Requirements
 - **Operating System**: Ubuntu 20.04
 - **GPU Driver**: CUDA 12.0
-- **Tools**: Miniconda, git
 
 Before starting, ensure that CUDA 12.0 is installed. Refer to the [NVIDIA CUDA Installation Guide](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html) for instructions on installing CUDA 12.0 on Ubuntu 20.04. After installing CUDA, follow these steps to set up the project environment:
 
@@ -48,7 +47,7 @@ Before starting, ensure that CUDA 12.0 is installed. Refer to the [NVIDIA CUDA I
 
 ## Training
 
-To train the DQN model, run the following command:
+To train the model, run the following command:
 ```bash
 python train.py
 ```
@@ -59,7 +58,7 @@ python train.py
 - `--height`: Board height (default: 20)
 - `--batch_size`: Batch size (default: 512)
 - `--lr`: Learning rate (default: 1e-3)
-- `--num_epochs`: Number of training epochs (default: 3000)
+- `--num_epochs`: Number of training epochs (default: 7000)
 
 Example: Adjust learning rate and batch size:
 ```bash
