@@ -78,7 +78,7 @@ python test.py
 `test.py` supports the following command-line arguments:
 - `--width`: Board width (default: 10)
 - `--height`: Board height (default: 20)
-- `--fps`: Video frame rate (default: 300)
+- `--fps`: Video frame rate (default: 30)
 - `--saved_path`: Path to saved models (default: trained_models)
 - `--result`: Output video filename (default: result.mp4)
 
